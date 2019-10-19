@@ -1,8 +1,5 @@
 <?php
-include 'db.php';
+require_once('head.php');
+require_once('nav.php');
 
-$db = new DbConnection();
-
-$connection = $db->dbConnect();
-
- ?>
+?>
