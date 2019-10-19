@@ -1,5 +1,4 @@
 <?php
-    $title = 'Bringing Joy to the World';
     require_once('head.php');
     require_once('nav.php');
 ?>
