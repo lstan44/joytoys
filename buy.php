@@ -22,6 +22,7 @@ $amaz_id = $wishlist_id[$idx];
       foreach ($json_data as $key => $val) {
         if($val['num']>3) break; // upto 3 items
         $link = $val['link'];
+        
       echo '<img src="'.$val['picture'].'" class="card-img-top" alt="Image">';
       echo '<div class="card-body">';
         echo '<h5 class="card-title">'. $price.'</h5>';
