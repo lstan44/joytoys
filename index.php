@@ -47,12 +47,6 @@
         <h2>Our Mission</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id viverra nibh, at tincidunt velit. Maecenas dapibus, lacus eget consequat fermentum, risus risus efficitur lectus, venenatis tincidunt leo ipsum et tellus. Ut quis pretium sem. Fusce imperdiet cursus tellus id feugiat. Sed in enim at diam tincidunt volutpat. Nulla sit amet augue libero. Donec sit amet dignissim ex. Sed aliquam nulla massa, a eleifend risus volutpat sodales. Nulla molestie convallis lacinia. Curabitur sed odio turpis. Aliquam eget nibh quis lectus vulputate convallis sit amet quis massa. Quisque tempus pellentesque vulputate. In nibh urna, elementum scelerisque nulla ut, pulvinar hendrerit ipsum.</p>
       </div>
-
-      <footer class="footer" style="text-align: center">
-        <hr width="80%">
-        <p>&copy; <a href="index.php">JoyToys</a> 2019 <br /> Made with &hearts; in NYC</p>
-      </footer>
-
-    </div>
-  </body>
-</html>
+<?php
+  require_once 'footer.php'
+?>

@@ -27,11 +27,6 @@
           <input type="submit">
 
       </form>
-
-      <footer class="footer">
-        <p>&copy; JoyToys 2019</p>
-      </footer>
-
-    </div>
-  </body>
-</html>
+<?php
+  require_once 'footer.php'
+?>
