@@ -34,7 +34,6 @@ $amaz_id = $wishlist_id[$idx];
     }
 
 ?>
-
-    <footer class="footer">
-      <p>&copy; JoyToys 2019</p>
-    </footer>
+<?php
+  require_once 'footer.php'
+?>

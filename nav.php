@@ -12,9 +12,6 @@ echo '
             <li class="nav-item">
               <a class="nav-link" href="buy.php">Buy a Gift</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="donate.php">Donate</a>
-            </li>
           </ul>
         </nav>
         <a href="index.php" style="text-decoration:none;"><h3 class="text-muted">JoyToys</h3></a>
