@@ -5,8 +5,9 @@
 
     echo '
           <div>
+          <br />
               <h1>THANK YOU FOR REGISTERING </h1>
-              <p> We will email you regarding your gifts soon! </p>
+              <p> Please be on the lookout, our generous donors can send a gift any time!</p>
 
           </div>
 

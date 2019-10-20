@@ -3,7 +3,9 @@ require_once('head.php');
 require_once('nav.php');
 ?>
 <h2>Their Story</h2>
-<p>blah blah blah </p>
+<blockquote class="blockquote">
+<p>Raising a boy as a single parent, it can be tough to give my child everything they want. 2019 was a rough year and alleviating holiday presents would be a huge relief to my family. Thank you!! </p>
+</blockquote>
 <?php
 function getWishListJson($id){
   $url = "http://localhost/joytoys/wishlist.php?id=".$id;
