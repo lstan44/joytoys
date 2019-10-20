@@ -23,9 +23,6 @@
       <img class="d-block w-100" src="imgs/display_2.jpg" alt="Second slide">
         <div class="carousel-caption">
           <p style="color: #f7f7f7; font-family: bold; font-size: 1.3em">Our goal is to bring love and joy to your children.</p>
-          <form action="/receive.php">
-            <button type="submit" class="btn btn-primary mb-2">Build Your Community Now</button>
-        </form>
         </div>
     </div>
     <div class="carousel-item">
