@@ -21,7 +21,7 @@ $amaz_id = $wishlist_id[$idx];
         if($val['num']>3) break; // upto 3 items
         $link = $val['link'];
         echo '<tr><td><a href ="'.$link.'"><img src="' . $val['picture']. '"alt="Image"</a></td></tr>';
-        echo '<tr><td><a href ="'.$link.'">' . $val['name']. '</a></td></tr>';
+        echo '<tr><td><a href ="'.$link.'">' . "Buy". '</a></td></tr>';
         // echo '<tr><td>' . $val['link']. '</td></tr>'; // make it as link
         echo '</a>';
         $price = preg_replace('/<span class=\"a-offscreen\">(.+?)<\/span>/s','',$val['new-price']);
