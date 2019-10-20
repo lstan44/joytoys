@@ -16,20 +16,36 @@ $amaz_id = $wishlist_id[$idx];
     //Traverse array and get the data for amazon gifts in wishlist
     // var_dump($json_data[0]);
     if (is_array($json_data) || is_object($json_data)){ // silences error
-      echo '<table>';
+      // echo '<table>';
+      echo '<div class="card" style="width: 18rem;">';
+
       foreach ($json_data as $key => $val) {
         if($val['num']>3) break; // upto 3 items
         $link = $val['link'];
-        echo '<tr><td><a href ="'.$link.'"><img src="' . $val['picture']. '"alt="Image"</a></td></tr>';
-        echo '<tr><td><a href ="'.$link.'">' . $val['name']. '</a></td></tr>';
+      echo '<img src="'.$val['picture'].'" class="card-img-top" alt="Image">';
+      echo '<div class="card-body">';
+        echo '<h5 class="card-title">'. $price.'</h5>';
+        echo '<p class="card-text">'. $val['name']. '</p>';
+        echo '<a href="'.$link.'" class="btn btn-primary">BUY</a>';
+      echo '</div></div>';
+      // echo '<tr><td><a href ="'.$link.'"><img src="' . $val['picture']. '"alt="Image"</a></td></tr>';
+      // echo '<tr><td><a href ="'.$link.'">' . $val['name']. '</a></td></tr>';
         // echo '<tr><td>' . $val['link']. '</td></tr>'; // make it as link
-        echo '</a>';
-        $price = preg_replace('/<span class=\"a-offscreen\">(.+?)<\/span>/s','',$val['new-price']);
-        if($price == ''){ echo '<tr><td>Sorry. Out of stock item.</td></tr>'; }
-        else echo '<tr><td>' . $price. '</td></tr>';// old-price if new-price is blank/item is outta stock
+      // echo '</a>';
+      // $price = preg_replace('/<span class=\"a-offscreen\">(.+?)<\/span>/s','',$val['new-price']);
+      // if($price == ''){ echo '<tr><td>Sorry. Out of stock item.</td></tr>'; }
+      // else echo '<tr><td>' . $price. '</td></tr>';// old-price if new-price is blank/item is outta stock
         // echo '<img src=">' . $val['picture']. '" alt = "Pic">';
       }
-      echo '</table>';
+      // echo '</table>';
+
+      // echo '<div class="card" style="width: 18rem;">';
+      // echo '<img src="'.$val['picture'].'" class="card-img-top" alt="Image">';
+      // echo '<div class="card-body">';
+      //   echo '<h5 class="card-title">'. $price.'</h5>';
+      //   echo '<p class="card-text">'. $val['name']. '</p>';
+      //   echo '<a href="'.$link.'" class="btn btn-primary">BUY</a>';
+      // echo '</div></div>';
     }
 
 ?>
