@@ -1,6 +1,10 @@
 <?php
 require_once('head.php');
 require_once('nav.php');
+?>
+<h2>Their Story</h2>
+<p>blah blah blah </p>
+<?php
 function getWishListJson($id){
   $url = "http://localhost/joytoys/wishlist.php?id=".$id;
   $raw = file_get_contents($url);
