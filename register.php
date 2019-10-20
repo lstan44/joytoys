@@ -10,7 +10,7 @@ $listid = $_POST["list_id"];
 $sql = "INSERT into receiver(receiverfullname,receiveremail,receiverphone,receiveraddress,receiverstory,receiveramazonid) VALUES('$fullname','$email','$phone','$address','$story','$listid')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    header("location: thankyou.php");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
