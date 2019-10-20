@@ -22,7 +22,7 @@ $amaz_id = $wishlist_id[$idx];
         if($val['num']>3) break; // upto 3 items
         $link = $val['link'];
         echo '<tr>';
-      echo '<img src="'.$val['picture'].'" class="card-img-top" alt="Image"style=" max-height: 500px; max-width: 500px;">';
+      echo '<img src="'.$val['picture'].'" class="card-img-top" alt="Image"style=" max-height: 300px; max-width: 300px;">';
         echo '<h5 class="card-title">'. $price.'</h5>';
         echo '<p class="card-text">'. $val['name']. '</p>';
         echo '<tr><a href="'.$link.'" class="btn btn-primary">BUY</a></tr>';
