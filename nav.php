@@ -15,7 +15,6 @@ echo '
           </ul>
         </nav>
         <a href="index.php" style="text-decoration:none;"><h3 class="text-muted">JoyToys</h3></a>
-        <!-- Backup Logo: <a href="index.php"><img src=imgs/logo.png /></a> -->
       </div>
 ';
 ?>
