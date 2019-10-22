@@ -1,6 +1,12 @@
 <?php
 require_once('head.php');
 require_once('nav.php');
+?>
+<h2>Their Story</h2>
+<blockquote class="blockquote">
+<p>Raising a boy as a single parent, it can be tough to give my child everything they want. 2019 was a rough year and alleviating holiday presents would be a huge relief to my family. Thank you!! </p>
+</blockquote>
+<?php
 function getWishListJson($id){
   $url = "http://localhost/joytoys/wishlist.php?id=".$id;
   $raw = file_get_contents($url);
@@ -16,24 +22,24 @@ $amaz_id = $wishlist_id[$idx];
     //Traverse array and get the data for amazon gifts in wishlist
     // var_dump($json_data[0]);
     if (is_array($json_data) || is_object($json_data)){ // silences error
-      echo '<table>';
+      // echo '<div class="card" style="width: 18rem;">';
+      echo '<center><table>';
       foreach ($json_data as $key => $val) {
         if($val['num']>3) break; // upto 3 items
         $link = $val['link'];
-        echo '<tr><td><a href ="'.$link.'"><img src="' . $val['picture']. '"alt="Image"</a></td></tr>';
-        echo '<tr><td><a href ="'.$link.'">' . "Buy". '</a></td></tr>';
-        // echo '<tr><td>' . $val['link']. '</td></tr>'; // make it as link
-        echo '</a>';
-        $price = preg_replace('/<span class=\"a-offscreen\">(.+?)<\/span>/s','',$val['new-price']);
-        if($price == ''){ echo '<tr><td>Sorry. Out of stock item.</td></tr>'; }
-        else echo '<tr><td>' . $price. '</td></tr>';// old-price if new-price is blank/item is outta stock
-        // echo '<img src=">' . $val['picture']. '" alt = "Pic">';
+        echo '<tr>';
+      echo '<img src="'.$val['picture'].'" class="card-img-top" alt="Image"style=" max-height: 300px; max-width: 300px;">';
+        echo '<h5 class="card-title">'. $price.'</h5>';
+        echo '<p class="card-text">'. $val['name']. '</p>';
+        echo '<tr><a href="'.$link.'" class="btn btn-primary">BUY</a></tr>';
+      // echo '</span></div>';
+        echo '<br>';
+        echo '</tr>';
       }
-      echo '</table>';
+      echo '</table></center>';
     }
 
 ?>
-
-    <footer class="footer">
-      <p>&copy; JoyToys 2019</p>
-    </footer>
+<?php
+  require_once 'footer.php'
+?>
